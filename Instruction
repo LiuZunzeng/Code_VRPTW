@@ -1,0 +1,15 @@
+Data:包含数据文件和用于数据读取的模块，C101、C102这些为Solomon标杆算例，使用Data模块来读取，C101_degree为加入车辆等级和顾客等级的算例，使用Data1
+来读取,注意运行各个模型之前要调整一下Data模块的文件路径
+
+Gurobi_Direct:直接调用Gurobi求解器求解，OptModel_m模块为没有对数据进行预处理的模型，OptModel_m_pre模块为进行预处理的模型，OptModel_degree
+为拓展研究那一节的模型
+
+Column_generation:采用列生成算法求解
+
+Lagrange_relaxation:采用次梯度算法求解拉格朗日对偶问题
+
+Branch_and_Bound:分支定界框架
+
+Visualizition:可视化文件，Solution_origin用于OptModel_m模块的可视化，Solution_Lagra用于输出Lagrange_relaxation的最优解，Solution_degree
+用于OptModel_degree模块的可视化
+
